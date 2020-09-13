@@ -15,7 +15,7 @@ class ProductsContainer extends React.Component {
     render() {
         return (
             <div>
-                <ProductForm />
+                <ProductForm /><br></br>
                 <ProductList products={this.props.products} />
             </div>
         )
