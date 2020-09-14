@@ -1,13 +1,21 @@
 import React from 'react';
+import DetailContainer from '../containers/DetailContainer';
+
+import { Redirect } from 'react-router-dom'
 
 const Product = (props) => {
 
-    let product = props.products.filter(product => product.id == props.match.params.id)[0]
+
+    let product = props.products[props.match.params.id - 1]
+
 
     return (
-        <li>
-           {product ? product.name : null} - {product ? product.rating : null}
-        </li>
+        <div>
+            <h2>
+                {product ? product.name : null} - Your Rating: {product ? product.rating : null}
+            </h2>
+            <DetailContainer product={product}/>
+        </div>
     )
 
 
