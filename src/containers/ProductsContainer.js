@@ -1,6 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux';
-import { Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 
 import { fetchProducts } from '../actions/fetchProducts'
 import ProductList from '../components/ProductList'
@@ -16,10 +16,11 @@ class ProductsContainer extends React.Component {
     render() {
         return (
             <div>
-                <Route path='/products/new' component={ProductForm} />
-                <br></br>
-                <Route path='/products/:id' render={(routerProps) => <Product {...routerProps} products={this.props.products} /> } />
-                <Route exact path='/products' render={(routerProps) => <ProductList {...routerProps} products={this.props.products} />} />
+                <Switch>
+                    <Route path='/products/new' component={ProductForm} />
+                    <Route path='/products/:id' render={(routerProps) => <Product {...routerProps} products={this.props.products} />} />
+                    <Route exact path='/products' render={(routerProps) => <ProductList {...routerProps} products={this.props.products} />} />
+                </Switch>
             </div>
         )
     }
