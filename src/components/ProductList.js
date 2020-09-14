@@ -1,6 +1,6 @@
 import React from 'react';
-import { Route, Link } from 'react-router-dom';
-import Product from './Product'
+import { Link } from 'react-router-dom';
+
 
 
 
