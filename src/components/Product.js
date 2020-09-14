@@ -1,13 +1,12 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom'
-import DetailContainer from '../containers/DetailContainer';
+import {Redirect} from 'react-router-dom'
 
+import DetailContainer from '../containers/DetailContainer'
 
 
 const Product = (props) => {
 
-
-    let product = props.products.filter(product => product.name == props.match.params.name)[0]
+    let product = props.products.filter(product => product.name === props.match.params.name)[0]
     
     return (
         <div>
@@ -18,7 +17,6 @@ const Product = (props) => {
         </div>
     )
 
-
 }
 
-export default Product;
+export default Product
