@@ -1,11 +1,14 @@
 import React from 'react';
+import Product from './Product'
+import { Route } from 'react-router-dom';
+
 
 const ProductList = (props) => {
 
     return (
         <div>
-            {props.products.map(product => <li key={product.id}>{product.name} -- {product.image_url} -- {product.rating}</li>
-            )}
+            {props.products.map(product =>
+                <div key={product.id}><Product product={product} /></div>)}
         </div>
     )
 
