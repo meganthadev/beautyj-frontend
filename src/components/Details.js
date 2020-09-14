@@ -1,15 +1,14 @@
 import React from 'react'
-import DetailContainer from '../containers/DetailContainer';
-
 
 const Details = (props) => {
 
-        return(
-            <div>
-                Details
-            </div>
-
-        )
-
+     return (
+        <div>
+            {props.details && props.details.map(detail =>
+                <li key={detail.id}> {detail.description} </li>
+            )}
+        </div>
+    )
 }
-export default Details;
+
+export default Details
