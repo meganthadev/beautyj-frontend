@@ -18,7 +18,7 @@ class ProductsContainer extends React.Component {
             <div>
                 <Switch>
                     <Route path='/products/new' component={ProductForm} />
-                    <Route path='/products/:id' render={(routerProps) => <Product {...routerProps} products={this.props.products} />} />
+                    <Route path='/products/:name' render={(routerProps) => <Product {...routerProps} products={this.props.products} />} />
                     <Route exact path='/products' render={(routerProps) => <ProductList {...routerProps} products={this.props.products} />} />
                 </Switch>
             </div>

@@ -7,9 +7,8 @@ import DetailContainer from '../containers/DetailContainer';
 const Product = (props) => {
 
 
-    let product = props.products.filter(product => product.id == props.match.params.id)[0]
-
-
+    let product = props.products.filter(product => product.name == props.match.params.name)[0]
+    
     return (
         <div>
             <h2>
@@ -22,4 +21,4 @@ const Product = (props) => {
 
 }
 
-export default Product
+export default Product;
