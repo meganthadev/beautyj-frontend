@@ -1,6 +1,6 @@
 import React from 'react';
 import Product from './Product'
-import { Route } from 'react-router-dom';
+import { Route, Link } from 'react-router-dom';
 
 
 const ProductList = (props) => {
@@ -8,7 +8,9 @@ const ProductList = (props) => {
     return (
         <div>
             {props.products.map(product =>
-                <div key={product.id}><Product product={product} /></div>)}
+                <li key={product.id}>
+                    <Link to={`/products/${product.id}`}>{product.name}</Link>
+                </li>)}
         </div>
     )
 
