@@ -32,11 +32,11 @@ class ProductForm extends React.Component {
             <div>
                 <form onSubmit={this.handleSubmit}>
                     <label>Product Name:  </label>
-                    <input type='text' placeholder='Product Name' value={this.state.name} name="name" onChange={this.handleChange} /><br></br><br></br>
+                    <input type='text' placeholder='Product Name' value={this.state.name} name="name" onChange={this.handleChange} /><br></br>
                     <label>Product Image:  </label>
-                    <input type='text' placeholder='Image URL' value={this.state.image_url} name="image_url" onChange={this.handleChange} /><br></br><br></br>
+                    <input type='text' placeholder='Image URL' value={this.state.image_url} name="image_url" onChange={this.handleChange} /><br></br>
                     <label>Your Personal Rating 1-5:  </label>
-                    <input type='text' placeholder='Rating' value={this.state.rating} name="rating" onChange={this.handleChange} /><br></br><br></br>
+                    <input type='text' placeholder='Rating' value={this.state.rating} name="rating" onChange={this.handleChange} /><br></br>
                 <input type="submit" /><br></br><br></br>
                 </form>
             </div>
