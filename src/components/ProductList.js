@@ -1,6 +1,7 @@
 import React from 'react';
-import Product from './Product'
 import { Route, Link } from 'react-router-dom';
+import Product from './Product'
+
 
 
 const ProductList = (props) => {
@@ -16,4 +17,4 @@ const ProductList = (props) => {
 
 }
 
-export default ProductList
+export default ProductList;
