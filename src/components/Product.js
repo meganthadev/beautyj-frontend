@@ -1,12 +1,15 @@
 import React from 'react';
-import {Redirect} from 'react-router-dom'
-
+import {Redirect} from 'react-router-dom';
 import DetailContainer from '../containers/DetailContainer'
 
 
 const Product = (props) => {
 
+    console.log(props)
+
     let product = props.products.filter(product => product.name === props.match.params.name)[0]
+
+    console.log(product)
     
     return (
         <div>

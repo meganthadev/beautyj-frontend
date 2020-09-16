@@ -32,4 +32,4 @@ const mapStateToProps = state => {
     }
 }
 
-export default connect(mapStateToProps, { fetchProducts })(ProductsContainer);
+export default connect(mapStateToProps, {fetchProducts})(ProductsContainer);
