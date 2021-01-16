@@ -7,6 +7,15 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 #### Features
 - Users of this app can create, view, or edit beauty care product pages which hold a five star review system.
 
+### Installation/Start-Up Instructions:
+
+#### Frontend :
+Run 'git clone git@github.com:meganthadev/beautyj-backend.git' Run npm start to activate frontend and view index.js in browser (with rails server running).
+
+Use: RUBYOPT=-W:no-deprecated rails c --> To enter irb without deprecation warnings.
+
+-----------------
+
 ## Available Scripts
 
 In the project directory, you can run:
