@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Welcome to Beauty Junkie ! An app to track, log, rate, and review beauty products! For those of us who could maybe slightly just a little bit.. be considered beauty junkies!
 
-####Features
+#### Features
 
 ## Available Scripts
 
